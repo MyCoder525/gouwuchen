@@ -6,7 +6,7 @@
       :key="item.goods_id"
       :goods="item"
     ></MyGoods>
-    <MyFooter></MyFooter>
+    <MyFooter :goodsList="goodsList"></MyFooter>
   </div>
 </template>
 
