@@ -41,5 +41,8 @@ export default {
 <style scoped>
 .box {
   padding: 50px 0;
+  box-sizing: border-box;
+  max-height: 100vh;
+  overflow: auto;
 }
 </style>

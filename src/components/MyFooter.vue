@@ -43,7 +43,7 @@ export default {
     allCount() {
       return this.goodsList.reduce((pre, curr) => {
         if (curr.goods_state) {
-          return curr.goods_state + pre;
+          return curr.goods_count + pre;
         } else {
           return pre;
         }
@@ -52,7 +52,7 @@ export default {
     allPrice() {
       return this.goodsList.reduce((pre, curr) => {
         if (curr.goods_state) {
-          return curr.goods_count * curr.goods_price;
+          return pre + curr.goods_count * curr.goods_price;
         } else {
           return pre;
         }
